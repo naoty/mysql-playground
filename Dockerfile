@@ -5,4 +5,4 @@ RUN apt-get update \
   && pip3 install mycli \
   && rm -rf /var/lib/apt-/lists/*
 
-COPY world.sql.gz /docker-entrypoint-initdb.d/
+COPY world.sql world_x.sql /docker-entrypoint-initdb.d/
